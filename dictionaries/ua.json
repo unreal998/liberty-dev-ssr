@@ -1,0 +1,15 @@
+{
+  "server-component": {
+    "welcome": "Vítejte"
+  },
+  "counter": {
+    "increment": "Přidat",
+    "decrement": "Ubrat"
+  },
+  "header": {
+    "home": "На головну",
+    "about": "Про нас",
+    "services": "Послуги",
+    "contact": "Контакти"
+  }
+}

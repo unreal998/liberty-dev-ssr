@@ -5,5 +5,11 @@
   "counter": {
     "increment": "Increment",
     "decrement": "Decrement"
+  },
+  "header": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "contact": "Contacts"
   }
 }

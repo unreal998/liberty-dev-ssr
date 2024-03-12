@@ -1,8 +1,18 @@
+import LocaleSwitcher from "../../components/locale-switcher";
 import { i18n, type Locale } from "../../i18n-config";
+import "./global.css";
+import { Jost } from "next/font/google";
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
 }
+
+const jost = Jost({
+  weight: ["400", "500", "600", "700"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export default function Root({
   children,
@@ -12,8 +22,11 @@ export default function Root({
   params: { lang: Locale };
 }) {
   return (
-    <html lang={params.lang}>
-      <body>{children}</body>
+    <html lang={params.lang} className={jost.className}>
+      <body>
+        <LocaleSwitcher />
+        <main>{children}</main>
+      </body>
     </html>
   );
 }

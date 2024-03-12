@@ -1,0 +1,22 @@
+.hero_btn {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+  max-width: 18rem;
+  border: 2px solid var(--color-main);
+  color: var(--color-main);
+  letter-spacing: 1px;
+  border-radius: 0.25rem;
+  border-bottom-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  padding: 1rem 2.5rem;
+  font-size: 2rem;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.hero_btn:hover {
+  background-color: var(--color-main);
+  color: var(--txt-main);
+}

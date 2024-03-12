@@ -1,0 +1,15 @@
+{
+  "server-component": {
+    "welcome": "Willkommen"
+  },
+  "counter": {
+    "increment": "Zuwachs",
+    "decrement": "Dekrementieren"
+  },
+  "header": {
+    "home": "На главную",
+    "about": "О нас",
+    "services": "Услуги",
+    "contact": "Контакты"
+  }
+}
