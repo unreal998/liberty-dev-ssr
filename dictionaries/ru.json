@@ -11,5 +11,12 @@
     "about": "О нас",
     "services": "Услуги",
     "contact": "Контакты"
+  },
+  "homeSection": {
+    "ITSolutions": "IT Решения",
+    "providingIT": "предоставляем лучшие услуги & IT",
+    "solutions": "Решения",
+    "subHeader": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed architecto dolorum inventore totam adipisci",
+    "contactUs": "Contact Us"
   }
 }
