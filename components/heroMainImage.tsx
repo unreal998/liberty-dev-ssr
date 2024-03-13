@@ -10,20 +10,24 @@ function HeroMainImage() {
   const rotateX = useTransform(y, [-100, 100], [8, -8]);
   const rotateY = useTransform(x, [-100, 100], [-8, 8]);
 
+  const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
+    const rect = event.currentTarget.getBoundingClientRect();
+    x.set(event.clientX - rect.left - rect.width / 2);
+    y.set(event.clientY - rect.top - rect.height / 2);
+  };
+
+  const handleMouseLeave = () => {
+    x.set(0);
+    y.set(0);
+  };
+
   return (
     <motion.div
       style={{
         perspective: 600,
       }}
-      onMouseMove={(event) => {
-        const rect = event.currentTarget.getBoundingClientRect();
-        x.set(event.clientX - rect.left - rect.width / 2);
-        y.set(event.clientY - rect.top - rect.height / 2);
-      }}
-      onMouseLeave={() => {
-        x.set(0);
-        y.set(0);
-      }}
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
     >
       <motion.img
         src="/img/hero.png"

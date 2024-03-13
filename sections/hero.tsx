@@ -1,14 +1,17 @@
-"use client";
-
 import styles from "./Hero.module.css";
 import Image from "next/image";
-import IconsList from "../ui/IconsList";
-import HeroBtn from "../ui/HeroBtn";
+import IconsList from "../ui/iconsList/IconsList";
+import HeroBtn from "../ui/heroBtn/HeroBtn";
 import DotsAnimation from "../components/dotsAnimation";
 import HeroMainImage from "../components/heroMainImage";
-import dynamic from "next/dynamic";
 
-export default function Hero() {
+import { type getDictionary } from "../get-dictionary";
+
+export default function Hero({
+  dictionary,
+}: {
+  dictionary: Awaited<ReturnType<typeof getDictionary>>["homeSection"];
+}) {
   return (
     <div className={styles.box}>
       <div className={styles.box_bg}></div>
@@ -16,12 +19,12 @@ export default function Hero() {
       <div className={styles.container}>
         <div className={styles.text_box}>
           <IconsList />
-          <p className={styles.pre_title}>IT Solutions</p>
+          <p className={styles.pre_title}>{dictionary.ITSolutions}</p>
           <h1 className={styles.hero_title}>
-            providing the best services & IT
+            {dictionary.providingIT}
             <span className={styles.featured_text}>
               {" "}
-              Solutions
+              {dictionary.solutions}
               <Image
                 className={styles.featured_text_img}
                 src="/img/waveLine.svg"
@@ -32,11 +35,8 @@ export default function Hero() {
             </span>
             <span className={styles.design_element}></span>
           </h1>
-          <p className={styles.hero_subtitle}>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
-            architecto dolorum inventore totam adipisci
-          </p>
-          <HeroBtn>Contact Us</HeroBtn>
+          <p className={styles.hero_subtitle}>{dictionary.subHeader}</p>
+          <HeroBtn>{dictionary.contactUs}</HeroBtn>
         </div>
         <HeroMainImage />
       </div>

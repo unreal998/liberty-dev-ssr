@@ -11,5 +11,12 @@
     "about": "About Us",
     "services": "Services",
     "contact": "Contacts"
+  },
+  "homeSection": {
+    "ITSolutions": "IT Solutions",
+    "providingIT": "providing the best services & IT",
+    "solutions": "Solutions",
+    "subHeader": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed architecto dolorum inventore totam adipisci",
+    "contactUs": "Contact Us"
   }
 }
