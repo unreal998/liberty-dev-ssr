@@ -1,0 +1,27 @@
+.input_label {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out 0s;
+  margin-bottom: 0;
+  color: var(--txt-main);
+}
+
+.req {
+  color: red;
+}
+
+.text_input {
+  background-color: transparent;
+  border: 1px solid var(--txt-main);
+  padding: 0.5rem;
+  max-width: 30rem;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 3rem 0;
+}

@@ -3,7 +3,8 @@ import { Locale } from "../../i18n-config";
 import Counter from "../../components/counter";
 import LocaleSwitcher from "../../components/locale-switcher";
 import Hero from "../../sections/hero";
-
+import FormElements from "../../sections/formElements";
+import About from "../../sections/About";
 
 export default async function IndexPage({
   params: { lang },
@@ -22,6 +23,8 @@ export default async function IndexPage({
         </p>
         <Counter dictionary={dictionary.counter} />
         <Hero />
+        <FormElements />
+        <About />
       </div>
     </>
   );
