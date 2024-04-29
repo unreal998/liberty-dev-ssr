@@ -1,0 +1,39 @@
+.input_label {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+  color: var(--txt-main);
+}
+
+.text_input {
+  width: 1em;
+  height: 1em;
+  border: 1px solid var(--color-main);
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  position: relative;
+}
+
+.text_input:checked {
+  background-color: var(--color-main);
+}
+
+.text_input:checked::before {
+  content: "✓";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 0.8em;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}

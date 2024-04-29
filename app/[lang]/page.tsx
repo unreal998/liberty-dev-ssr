@@ -2,6 +2,9 @@ import { getDictionary } from "../../get-dictionary";
 import { Locale } from "../../i18n-config";
 import Counter from "../../components/counter";
 import Hero from "../../sections/hero";
+import FormElements from "../../sections/formElements";
+import About from "../../sections/About";
+
 
 export default async function IndexPage({
   params: { lang },
@@ -14,7 +17,14 @@ export default async function IndexPage({
     <>
       <div>
         <p>Current locale: {lang}</p>
-        <Hero dictionary={dictionary.homeSection} />
+        <p>
+          This text is rendered on the server:{" "}
+          {dictionary["server-component"].welcome}
+        </p>
+        <Counter dictionary={dictionary.counter} />
+        <Hero />
+        <FormElements />
+        <About />
       </div>
     </>
   );

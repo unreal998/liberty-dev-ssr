@@ -1,0 +1,41 @@
+.input_label {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+  color: var(--txt-main);
+}
+
+.text_input {
+  appearance: none;
+  width: 1.4rem;
+  height: 1.4rem;
+  border: 2px solid var(--color-main);
+  border-radius: 90%;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+}
+
+.text_input:checked::before {
+  content: "";
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-main);
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.text_input:focus {
+  outline: none;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
