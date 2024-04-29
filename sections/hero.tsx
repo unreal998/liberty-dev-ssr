@@ -38,7 +38,7 @@ export default function Hero() {
           </p>
           <HeroBtn>Contact Us</HeroBtn>
         </div>
-        <HeroMainImage />
+        <HeroMainImage src={"/img/hero.png"} />
       </div>
     </div>
   );
