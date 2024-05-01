@@ -3,7 +3,7 @@
 import { motion, useMotionValue, useTransform } from "framer-motion";
 import styles from "./heroMainImage.module.css";
 
-function HeroMainImage() {
+function HeroMainImage({ src }: { src: string }) {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
 
@@ -30,7 +30,7 @@ function HeroMainImage() {
       onMouseLeave={handleMouseLeave}
     >
       <motion.img
-        src="/img/hero.png"
+        src={src}
         className={styles.img_box}
         style={{
           rotateX: rotateX,

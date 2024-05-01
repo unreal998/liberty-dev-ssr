@@ -38,7 +38,7 @@ export default function Hero({
           <p className={styles.hero_subtitle}>{dictionary.subHeader}</p>
           <HeroBtn>{dictionary.contactUs}</HeroBtn>
         </div>
-        <HeroMainImage />
+        <HeroMainImage src={"/img/hero.png"} />
       </div>
     </div>
   );
