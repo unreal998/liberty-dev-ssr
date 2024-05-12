@@ -5,13 +5,7 @@ import HeroBtn from "../ui/heroBtn/HeroBtn";
 import DotsAnimation from "../components/dotsAnimation";
 import HeroMainImage from "../components/heroMainImage";
 
-import { type getDictionary } from "../get-dictionary";
-
-export default function Hero({
-  dictionary,
-}: {
-  dictionary: Awaited<ReturnType<typeof getDictionary>>["homeSection"];
-}) {
+export default function Hero() {
   return (
     <div className={styles.box}>
       <div className={styles.box_bg}></div>
@@ -19,12 +13,12 @@ export default function Hero({
       <div className={styles.container}>
         <div className={styles.text_box}>
           <IconsList />
-          <p className={styles.pre_title}>{dictionary.ITSolutions}</p>
+          <p className={styles.pre_title}>IT Solutions</p>
           <h1 className={styles.hero_title}>
-            {dictionary.providingIT}
+            providing the best services & IT
             <span className={styles.featured_text}>
               {" "}
-              {dictionary.solutions}
+              Solutions
               <Image
                 className={styles.featured_text_img}
                 src="/img/waveLine.svg"
@@ -35,8 +29,11 @@ export default function Hero({
             </span>
             <span className={styles.design_element}></span>
           </h1>
-          <p className={styles.hero_subtitle}>{dictionary.subHeader}</p>
-          <HeroBtn>{dictionary.contactUs}</HeroBtn>
+          <p className={styles.hero_subtitle}>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
+            architecto dolorum inventore totam adipisci
+          </p>
+          <HeroBtn>Contact Us</HeroBtn>
         </div>
         <HeroMainImage src={"/img/hero.png"} />
       </div>
