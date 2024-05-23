@@ -2,8 +2,6 @@
 
 import styles from "./About.module.css";
 import Image from "next/image";
-import IconsList from "../ui/IconsList";
-import HeroBtn from "../ui/HeroBtn";
 import DotsAnimation from "../components/dotsAnimation";
 import HeroMainImage from "../components/heroMainImage";
 import FormBtn from "../ui/FormBtn";
