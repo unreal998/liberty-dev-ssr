@@ -1,0 +1,73 @@
+.contactBox {
+  margin: 0rem auto 6rem;
+  max-width: 1300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+}
+
+.contactHeader {
+  grid-column: 1 / -1;
+  font-size: 6rem;
+  font-weight: 600;
+  color: var(--txt-main);
+  margin-bottom: 4rem;
+}
+
+.contactInfoBox {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.contactInfoHeader {
+  font-size: 1.8rem;
+  white-space: pre-line;
+  color: var(--txt-main);
+  line-height: 1.8;
+}
+
+.contactInfoItem {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  color: var(--txt-main);
+}
+
+.contactInfoTextBox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contactInfoText {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.contactInfoLink {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.contactFormBox {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+}
+
+.icon svg {
+  transition: all 0.3s;
+}
+
+.icon svg:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  color: var(--color-main);
+}
+
+.StyledContactBtnBox {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: flex-end;
+}

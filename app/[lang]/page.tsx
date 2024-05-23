@@ -4,7 +4,7 @@ import Counter from "../../components/counter";
 import Hero from "../../sections/hero";
 import FormElements from "../../sections/formElements";
 import About from "../../sections/About";
-
+import Footer from "../../sections/Footer";
 
 export default async function IndexPage({
   params: { lang },
@@ -25,6 +25,7 @@ export default async function IndexPage({
         <Hero />
         <FormElements />
         <About />
+        <Footer />
       </div>
     </>
   );

@@ -1,0 +1,62 @@
+.icon {
+  position: absolute;
+  left: 3px;
+  top: 14%;
+  padding: 0rem;
+  color: var(--color-main);
+}
+
+.formGroup {
+  position: relative;
+  padding: 1rem 0 0;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.formField {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid var(--txt-main);
+  outline: 0;
+  font-size: 1.8rem;
+  color: var(--txt-main);
+  padding: 0.5rem 4rem;
+  background: transparent;
+  transition: border-color 0.2s;
+  z-index: 10;
+  resize: none;
+  height: 12rem;
+}
+
+.formField::placeholder {
+  color: transparent;
+}
+
+.formField:focus ~ .formLabel,
+.formField:not(:placeholder-shown) ~ .formLabel {
+  font-size: 1rem;
+  color: var(--txt-secondary);
+}
+
+.formField:placeholder-shown ~ .formLabel {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 2rem;
+  margin-left: 4rem;
+}
+
+.formLabel {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: var(--txt-secondary);
+}
+
+.errorMessage {
+  color: red;
+  font-size: 1.4rem;
+  margin-left: 4rem;
+}
